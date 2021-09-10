@@ -4,7 +4,7 @@ $ sudo apt-get update
 
 $ sudo apt-get install openjdk-8-jdk --yes
 
-$ sudo wget -q -0 - https://pkg.jenkins.io/debian/jenkins.io.key | apt-key add -
+$ sudo wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | apt-key add -
 
 $ sudo sh -c 'echo deb http://pkg.jemkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
 
@@ -24,12 +24,16 @@ $ sudo usermod -aG docker jenkins
 $ sudo systemctl retart jenkins
 
 #acessar ip do jenkins e pegar chave para setar password
-#intalar plugins sugeridos
+
+#instalar plugins sugeridos
+
 #preencher usuário, senha, email, etc.
 
 #adicionar plugins que precisará
+
 #gerenciar jenkins > gerenciar plugins
     => docker, docker pipeline, kubernetes e kubernetes continuous deploy.
+
 #instalar (marcar para reiniciar depois)
 
 #criar credenciais
